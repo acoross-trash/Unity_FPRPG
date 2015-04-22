@@ -46,12 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BattleState.cs" />
-     <Compile Include="Assets\Scripts\EnemyEventHandler.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\SFXController.cs" />
-     <Compile Include="Assets\Scripts\battleStateManager.cs" />
-     <Compile Include="Assets\Scripts\button.cs" />
+     <Compile Include="Assets\Scripts\Skill_cli\EnemyEventHandler.cs" />
+     <Compile Include="Assets\Scripts\Skill_cli\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Skill_cli\SFXController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
