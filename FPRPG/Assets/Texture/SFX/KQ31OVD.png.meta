@@ -1,12 +1,12 @@
 fileFormatVersion: 2
 guid: 136c3ed3cc5bb4c4ba58695e2638a2b9
-timeCreated: 1429712951
+timeCreated: 1429947494
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: KQ31OVD_0
-    21300002: KQ31OVD_1
-    21300004: KQ31OVD_2
+    21300000: bash_1
+    21300002: bash_2
+    21300004: bash_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -52,7 +52,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: KQ31OVD_0
+    - name: bash_1
       rect:
         serializedVersion: 2
         x: 272
@@ -62,7 +62,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: KQ31OVD_1
+    - name: bash_2
       rect:
         serializedVersion: 2
         x: 268
@@ -72,7 +72,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: KQ31OVD_2
+    - name: bash_3
       rect:
         serializedVersion: 2
         x: 264

@@ -4,7 +4,8 @@ using System.Collections;
 [RequireComponent(typeof(Animator))]
 public class EnemyEventHandler : MonoBehaviour {
 
-	public GameObject lightningPrefab = null; 
+	public GameObject lightningPrefab = null;
+	public GameObject bashPrefab = null;
 	public Transform sfxSpawnTransform;
 
 	private Animator enemyAnimator = null;
@@ -26,15 +27,27 @@ public class EnemyEventHandler : MonoBehaviour {
 		GameManager.onEnemyAttacked -= OnEnemyAttackedHandler;
 	}
 
-	void OnEnemyAttackedHandler()
+	void OnEnemyAttackedHandler(int i)
 	{
 		Debug.Log("Enemy Attacked");
 
 		enemyAnimator.SetBool("bHit", true);
 		m_nHitTime = Time.time + 0.4f;
 
-		// SFX 오브젝트를 만든다
-		GameObject newSFX = (GameObject)Instantiate(lightningPrefab);
+		// 전달받은 인자에 따라 SFX 오브젝트를 만든다
+		GameObject newSFX;
+		switch (i)
+		{
+		case 0:
+			newSFX = (GameObject)Instantiate(lightningPrefab);
+			break;
+		case 1:
+			newSFX = (GameObject)Instantiate(bashPrefab);
+			break;
+		default:
+			return;
+		}
+
 		// SFX 출력 위치를 설정한다
 		newSFX.transform.position = sfxSpawnTransform.position;
 		

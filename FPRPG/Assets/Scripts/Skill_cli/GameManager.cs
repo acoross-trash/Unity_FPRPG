@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour 
 {
-	public delegate void EnemyEventHandler();
+	public delegate void EnemyEventHandler(int i);
 	public static event EnemyEventHandler onEnemyAttacked;
 
 	// Use this for initialization
@@ -35,14 +35,27 @@ public class GameManager : MonoBehaviour
 	void OnGUI()
 	{
 		#region SFX test with button input.
-		if (ShowButton (new Rect(0, 0, 100, 100), "SFX"))
+		if (ShowButton (new Rect(0, 0, 100, 100), "SFX0"))
 		{
 			//infoText.text = "Button Clicked";
 
 			if (onEnemyAttacked != null)
 			{
 				Debug.Log ("onEnemyAttacked call");
-				onEnemyAttacked();
+
+				onEnemyAttacked(0);
+			}
+		}
+
+		if (ShowButton (new Rect(0, 100, 100, 100), "SF12"))
+		{
+			//infoText.text = "Button Clicked";
+			
+			if (onEnemyAttacked != null)
+			{
+				Debug.Log ("onEnemyAttacked call");
+				
+				onEnemyAttacked(1);
 			}
 		}
 		#endregion
