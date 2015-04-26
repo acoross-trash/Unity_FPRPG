@@ -32,6 +32,14 @@ public class GameManager : MonoBehaviour
 		#endregion
 	}		
 
+	void AttackEnemy()
+	{
+		if (onEnemyAttacked != null)
+		{
+			onEnemyAttacked(0);
+		}
+	}
+
 	void OnGUI()
 	{
 		#region SFX test with button input.
@@ -39,15 +47,16 @@ public class GameManager : MonoBehaviour
 		{
 			//infoText.text = "Button Clicked";
 
-			if (onEnemyAttacked != null)
-			{
-				Debug.Log ("onEnemyAttacked call");
-
-				onEnemyAttacked(0);
-			}
+			AttackEnemy();
+//			if (onEnemyAttacked != null)
+//			{
+//				Debug.Log ("onEnemyAttacked call");
+//
+//				onEnemyAttacked(0);
+//			}
 		}
 
-		if (ShowButton (new Rect(0, 100, 100, 100), "SF12"))
+		if (ShowButton (new Rect(0, 100, 100, 100), "SFX1"))
 		{
 			//infoText.text = "Button Clicked";
 			

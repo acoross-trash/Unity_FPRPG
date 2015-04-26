@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Skill_cli\GameManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Skill_cli\EnemyEventHandler.cs">
     <Files>
-      <File FileName="Assets\Scripts\Skill_cli\GameManager.cs" Line="59" Column="5" />
-      <File FileName="Assets\Scripts\Skill_cli\EnemyEventHandler.cs" Line="56" Column="16" />
+      <File FileName="Assets\Scripts\Skill_cli\GameManager.cs" Line="39" Column="5" />
+      <File FileName="Assets\Scripts\Skill_cli\EnemyEventHandler.cs" Line="37" Column="1" />
       <File FileName="Assets\Scripts\Skill_cli\SFXController.cs" Line="26" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
